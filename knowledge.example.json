@@ -1,0 +1,5 @@
+[
+  {"id":"billi-001","title":"BILLI R-20","text":"BILLI R-20 is a small multilingual robot assistant prototype.","language":"en","source":"demo"},
+  {"id":"billi-002","title":"Languages","text":"BILLI Lite modules target English, Tamil, and Sinhala commands.","language":"en","source":"demo"},
+  {"id":"billi-003","title":"SD database","text":"Knowledge records are stored as JSON records with title, text, language, and source fields.","language":"en","source":"demo"}
+]
