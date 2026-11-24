@@ -55,3 +55,7 @@ MIT licensed. See [LICENSE](LICENSE).
 
 ## ESP32-WROOM MicroPython edition (new)
 This repository also includes `esp32_nanobot.py`, a dependency-free MicroPython intent router for ESP32-WROOM. It is intentionally separate from the desktop package and uses SD knowledge files at `/sd/billi/knowledge.json`. Copy that module to the board and run it in the REPL. The mobile browser demo is `mobile_test.html`.
+
+
+## SD-card wiring and database test
+For a common SPI microSD module on ESP32-WROOM: SCK GPIO18, MOSI GPIO23, MISO GPIO19, CS GPIO5 (confirm your board/module; adjust pins as needed). Run `sd_mount.py` first in MicroPython. Place `knowledge.example.json` on the card as `/sd/billi/knowledge.json`. Use `esp32_nanobot.py` to query the JSON file. `mobile_test.html` lets a phone browser load the same JSON via file picker (choose the file on SD card) and search records; mobile file access is browser/OS dependent. The sample schema is a JSON array of records with `title`, `text`, `language`, and `source` fields.
