@@ -51,3 +51,7 @@ pytest
 ```
 
 MIT licensed. See [LICENSE](LICENSE).
+
+
+## ESP32-WROOM MicroPython edition (new)
+This repository also includes `esp32_nanobot.py`, a dependency-free MicroPython intent router for ESP32-WROOM. It is intentionally separate from the desktop package and uses SD knowledge files at `/sd/billi/knowledge.json`. Copy that module to the board and run it in the REPL. The mobile browser demo is `mobile_test.html`.
